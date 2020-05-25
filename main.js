@@ -3,7 +3,7 @@ window.onload = () => {
   fadeOut();
 };
 
-const URL = "http://jsonplaceholder.typicode.com/posts";
+const URL = "https://jsonplaceholder.typicode.com/posts";
 let number;
 const getData = async () => {
   number = document.getElementById("number-test");
