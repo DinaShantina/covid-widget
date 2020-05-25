@@ -1,5 +1,6 @@
 window.onload = () => {
   getData();
+  fadeOut();
 };
 
 const URL = "http://jsonplaceholder.typicode.com/posts";
@@ -15,4 +16,11 @@ const getData = () => {
       })
       .catch((error) => console.log(error));
   });
+};
+
+const fadeOut = () => {
+  setTimeout(function () {
+    document.getElementById("mydiv").style.opacity = "0";
+    document.getElementById("mydiv").style.transition = "all 4s ease-out";
+  }, 1000); // <-- time in milliseconds
 };
