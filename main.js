@@ -1,5 +1,7 @@
 window.onload = () => {
   getData();
+  document.getElementById("mydiv").style.opacity = "1";
+  document.getElementById("mydiv").style.transition = "all .3s ease-out";
   fadeOut();
 };
 
@@ -18,10 +20,16 @@ const getData = async () => {
       .catch((error) => console.log(error));
   });
 };
+// const fadeIn = () => {
+//   setTimeout(function () {
+//     document.getElementById("mydiv").style.opacity = "0.5";
+//     document.getElementById("mydiv").style.transition = "all 1s ease-out";
+//   }, 1000);
 
+// };
 const fadeOut = () => {
   setTimeout(function () {
     document.getElementById("mydiv").style.opacity = "0";
-    document.getElementById("mydiv").style.transition = "all 4s ease-out";
-  }, 1000); // <-- time in milliseconds
+    document.getElementById("mydiv").style.transition = "all 3s ease-out";
+  }, 3000); // <-- time in milliseconds
 };
