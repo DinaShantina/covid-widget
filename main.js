@@ -6,7 +6,7 @@ window.onload = () => {
 };
 
 const URL = "http://jsonplaceholder.typicode.com/posts";
-console.log(URL);
+
 let number;
 const getData = async () => {
   number = document.getElementById("number-test");
