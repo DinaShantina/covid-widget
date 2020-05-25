@@ -5,9 +5,9 @@ window.onload = () => {
 
 const URL = "http://jsonplaceholder.typicode.com/posts";
 let number;
-const getData = () => {
+const getData = async () => {
   number = document.getElementById("number-test");
-  fetch(URL).then((response) => {
+  await fetch(URL).then((response) => {
     return response
       .json()
       .then((data) => {
